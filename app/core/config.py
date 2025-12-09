@@ -1,5 +1,5 @@
 # app/core/config.py
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
@@ -11,8 +11,12 @@ class Settings(BaseSettings):
     LLM_API_BASE_URL: str = "https://example-llm-api.com/v1/chat"
     LLM_API_KEY: str | None = None
 
-    class Config:
-        env_file = ".env"
+    # Pydantic v2 style config
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
 
 
 settings = Settings()
