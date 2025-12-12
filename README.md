@@ -3,8 +3,11 @@
 **Industry-ready LLM Playground** built with a **FastAPI backend**, **Google Gemini**, and a **sleek React + Tailwind UI**.  
 Designed to showcase **real-world LLM integration, clean architecture, and production deployment**.
 
-🔗 **Live Demo:**  
+## 🖥️ Live Demo
 👉 https://llm-playground-fastapi-gemini-nffi-ou4twwlmk.vercel.app/
+
+![LLM Playground Screenshot](assets/ui-main.png)
+
 
 ---
 
